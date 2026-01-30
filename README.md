@@ -81,6 +81,7 @@ face_recognition_project/
 ## 👨‍💻 Author
 
 **Dheeraj R. Singh**
+
 📧 Email: [newagecoder09@gmail.com](mailto:newagecoder09@gmail.com)
 
 🔗 GitHub: [https://github.com/DHEERAJ09R08SINGH](https://github.com/DHEERAJ09R08SINGH)
