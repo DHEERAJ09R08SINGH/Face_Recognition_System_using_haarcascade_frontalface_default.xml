@@ -1,16 +1,16 @@
 # Face Recognition System using Haar Cascade
 
-A **real-time Face Recognition System** developed using **Python and OpenCV**, utilizing the `haarcascade_frontalface_default.xml` classifier for fast and accurate face detection. This project detects human faces from live webcam feed or images and can be extended for recognition-based applications like attendance systems and security.
+A **real-time Face Recognition System** built using **Python and OpenCV**, utilizing the `haarcascade_frontalface_default.xml` classifier for fast and efficient face detection. The system detects human faces from a live webcam feed or images and is designed to be easily extended for recognition-based applications such as attendance systems and security solutions.
 
 ---
 
 ## 🚀 Features
 
 * Real-time face detection using Haar Cascade Classifier
-* Works with live webcam and static images
-* Fast and lightweight processing
-* Easy to understand and beginner-friendly
-* Can be extended for face recognition and attendance systems
+* Supports live webcam and static image input
+* Fast, lightweight, and efficient processing
+* Beginner-friendly and easy to understand codebase
+* Scalable for face recognition and attendance systems
 
 ---
 
@@ -25,53 +25,63 @@ A **real-time Face Recognition System** developed using **Python and OpenCV**, u
 
 ## 📁 Project Structure
 
-Your project should now look like this:
 ```
 face_recognition_project/
 │
-├── setup_project.py              # Creates folders
-├── face_recognition_system.py    # Main system code
-├── run_project.py                # Easy-to-use interface
-├── test_camera.py                # Camera test
-├── live_face_detection.py        # Live detection test
+├── setup_project.py              # Creates required folders
+├── face_recognition_system.py    # Core face detection & recognition logic
+├── run_project.py                # Main entry point to run the project
+├── test_camera.py                # Camera connectivity test
+├── live_face_detection.py        # Live face detection script
 │
-├── dataset/                      # Your training data
+├── dataset/                      # Training dataset
 │   ├── John/
 │   │   ├── face_0.jpg
 │   │   ├── face_1.jpg
-│   │   └── ... (150 images)
+│   │   └── ... (up to 150 images)
+│   │
 │   └── Sarah/
-│       └── ... (150 images)
+│       └── ... (up to 150 images)
 │
-└── models/                       # Trained models
+└── models/                       # Saved trained models
     ├── lbph_model.yml
     └── label_encoder.pkl
+```
 
+---
 
 ## 🧠 How It Works
 
-* Converts input frames to grayscale
-* Uses Haar Cascade classifier to detect faces
+* Captures frames from webcam or loads images
+* Converts frames to grayscale for faster processing
+* Detects faces using Haar Cascade Classifier
 * Draws bounding boxes around detected faces
-* Displays real-time detection results
+* Displays real-time detection output
 
 ---
 
 ## 📌 Applications
 
-* Face-based attendance system
-* Surveillance systems
-* Access control
-* Human–computer interaction
+* Face-based attendance systems
+* Security and surveillance
+* Access control systems
+* Human–Computer Interaction (HCI)
+
+---
+
+## 🔮 Future Enhancements
+
+* Improve recognition accuracy using deep learning (CNN)
+* Add automatic attendance logging
+* Integrate database storage
+* Deploy as a web application
 
 ---
 
 ## 👨‍💻 Author
 
 **Dheeraj R. Singh**
-📧 Email: [your-email@example.com](mailto:newagecoder09@gmail.com)
-🔗 GitHub: [https://github.com/your-username](https://github.com/DHEERAJ09R08SINGH)
+📧 Email: [newagecoder09@gmail.com](mailto:newagecoder09@gmail.com)
+🔗 GitHub: [https://github.com/DHEERAJ09R08SINGH](https://github.com/DHEERAJ09R08SINGH)
 
 ---
-
-
