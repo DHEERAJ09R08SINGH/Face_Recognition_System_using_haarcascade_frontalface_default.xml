@@ -1,0 +1,95 @@
+python run_project.py
+```
+
+### **Workflow:**
+
+#### **Phase 1: Collect Data (15 minutes)**
+```
+1. Choose option 1 (Collect face data)
+2. Enter your name (e.g., "John")
+3. Collect 150 images
+   - Face the camera
+   - Move your head (left, right, up, down)
+   - Change expressions (smile, neutral, serious)
+   - Wait for "Captured: 150/150"
+
+4. Repeat for another person (optional)
+   - Choose option 1 again
+   - Enter different name (e.g., "Sarah")
+   - Collect 150 images
+```
+
+#### **Phase 2: Train Model (2-5 minutes)**
+```
+1. Choose option 2 (Train the model)
+2. Wait for training to complete
+3. Note the accuracy (should be 85%+)
+```
+
+#### **Phase 3: Test Recognition (Real-time!)**
+```
+1. Choose option 3 (Test real-time recognition)
+2. Face the camera
+3. See your name appear above your face!
+4. Press 'q' to quit
+```
+
+---
+
+## **Expected Results**
+
+### **After Data Collection:**
+```
+✅ Collected 150 images for John
+📁 Saved in: dataset/John/
+
+✅ Collected 150 images for Sarah
+📁 Saved in: dataset/Sarah/
+```
+
+### **After Training:**
+```
+🎓 TRAINING SIMPLE MODEL (LBPH)
+Found 2 people: John, Sarah
+  - John: 150 images
+  - Sarah: 150 images
+
+✅ Loaded 300 total images
+Training set: 240 images
+Test set: 60 images
+
+✅ Test Accuracy: 91.67%
+💾 Model saved
+```
+
+### **During Recognition:**
+```
+Green box with "John (45)" appears when you're detected
+Or "Unknown (105)" if confidence is low
+```
+
+---
+
+## **Step 5: Project Structure Check**
+
+Your project should now look like this:
+```
+face_recognition_project/
+│
+├── setup_project.py              # Creates folders
+├── face_recognition_system.py    # Main system code
+├── run_project.py                # Easy-to-use interface
+├── test_camera.py                # Camera test
+├── live_face_detection.py        # Live detection test
+│
+├── dataset/                      # Your training data
+│   ├── John/
+│   │   ├── face_0.jpg
+│   │   ├── face_1.jpg
+│   │   └── ... (150 images)
+│   └── Sarah/
+│       └── ... (150 images)
+│
+└── models/                       # Trained models
+    ├── lbph_model.yml
+    └── label_encoder.pkl
